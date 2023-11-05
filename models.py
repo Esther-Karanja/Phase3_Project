@@ -9,7 +9,7 @@ class Label(Base):
 
      id =Column(Integer(), primary_key =True)
      name =Column(String(), nullable= False)
-     artist=relationship('Artist', backref='owner')  #one to many relationship with Artist "has"
+     artist=relationship('Artist', backref='label')  #one to many relationship with Artist "has"
 
      def __repr__(self):
          return f"{self.id} {self.name}"
@@ -34,7 +34,7 @@ class Song(Base):
      def __repr__(self):
          return f"{self.id} {self.title}"
 
- #many-to-many relationship between artists and songs    
+ #many-to-many relationship between artists and songs  /composite key  
 class ArtistSong(Base):
      __tablename__='artist_songs'
 
