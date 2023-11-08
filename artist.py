@@ -4,7 +4,7 @@ class Lable:
         self.name =name
 
     def name(self):
-        pass
+        self.name
 
 class Artist:
     def __init__(self, name):
