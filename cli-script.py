@@ -17,3 +17,14 @@ class Output(Artist, Lable, Song):
 
 if __name__== '__main__':
     fire.Fire(Output)
+
+#input examples and expected output
+#python3 cli-script.py title self Overdrive
+# output: The Song title is Overdrive
+
+#cli-script.py art_name self Post-Malone
+# output: Artist name is Post-Malone
+
+#python3 cli-script.py name self Republic.mercury
+#output: The Label is Republic.mercury
+
